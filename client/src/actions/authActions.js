@@ -2,7 +2,7 @@ import axios from 'axios'
 import setAuthToken from '../utils/setAuthToken'
 import jwt_decode from 'jwt-decode'
 
-import { GET_ERRORS } from './types'
+import { GET_ERRORS, SET_CURRENT_USER } from './types'
 
 //Register User
 export const registerUser = (userData, history) => dispatch => {
@@ -20,7 +20,7 @@ export const registerUser = (userData, history) => dispatch => {
 }
 
 // Login - Get User Token
-export const LoginUser = (userData) => dispatch => {
+export const loginUser = (userData) => dispatch => {
     axios.post('/api/users/login', userData)
         .then(res => {
             // Save to localStorage
