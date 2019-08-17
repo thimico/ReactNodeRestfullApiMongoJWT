@@ -33,6 +33,7 @@ class Login extends Component {
     
     }
     render() {
+        const { errors } = this.state;
         return (
             <div className="login">
                 <div className="container">
@@ -42,7 +43,11 @@ class Login extends Component {
                     <p className="lead text-center">Sign in to your DevPortfolio account</p>
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">
-                        <input type="email" className="form-control form-control-lg" placeholder="Email Address" 
+                        <input type="email" 
+                             className={classnames('form-control form-control-lg', {
+                                'is-invalid' : errors.email
+                            })} 
+                            placeholder="Email Address" 
                             name="email" 
                             value={this.state.email} 
                             onChange={this.onChange} />
