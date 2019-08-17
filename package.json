@@ -1,7 +1,7 @@
 {
-  "name": "devconnector",
+  "name": "devportfolio",
   "version": "1.0.0",
-  "description": "Social network for developers",
+  "description": "Portfolio network for developers",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
