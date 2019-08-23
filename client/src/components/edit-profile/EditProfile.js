@@ -87,7 +87,7 @@ const EditProfile = ({
                     <small className="form-text text-muted">A unique handle for your profile URL. Your full name, company name, nickname, etc (This CAN'T be changed later)</small>
                 </div>
                 <div className='form-group'>
-                    <select name='status' class="form-control form-control-lg" value={status} onChange={e => onChange(e)}>
+                    <select name='status' className="form-control form-control-lg" value={status} onChange={e => onChange(e)}>
                         <option>* Select Professional Status</option>
                         <option value='Developer'>Developer</option>
                         <option value='Junior Developer'>Junior Developer</option>
@@ -103,7 +103,7 @@ const EditProfile = ({
                     </small>
                 </div>
                 <div className='form-group'>
-                    <input class="form-control form-control-lg"
+                    <input className="form-control form-control-lg"
                         type='text'
                         placeholder='Company'
                         name='company'
@@ -115,7 +115,7 @@ const EditProfile = ({
                     </small>
                 </div>
                 <div className='form-group'>
-                    <input class="form-control form-control-lg"
+                    <input className="form-control form-control-lg"
                         type='text'
                         placeholder='Website'
                         name='website'
@@ -127,7 +127,7 @@ const EditProfile = ({
                     </small>
                 </div>
                 <div className='form-group'>
-                    <input class="form-control form-control-lg"
+                    <input className="form-control form-control-lg"
                         type='text'
                         placeholder='Location'
                         name='location'
@@ -139,7 +139,7 @@ const EditProfile = ({
                     </small>
                 </div>
                 <div className='form-group'>
-                    <input class="form-control form-control-lg"
+                    <input className="form-control form-control-lg"
                         type='text'
                         placeholder='* Skills'
                         name='skills'
@@ -151,7 +151,7 @@ const EditProfile = ({
                     </small>
                 </div>
                 <div className='form-group'>
-                    <input class="form-control form-control-lg"
+                    <input className="form-control form-control-lg"
                         type='text'
                         placeholder='Github Username'
                         name='githubusername'
@@ -164,7 +164,7 @@ const EditProfile = ({
                     </small>
                 </div>
                 <div className='form-group'>
-          <textarea class="form-control form-control-lg"
+          <textarea className="form-control form-control-lg"
               placeholder='A short bio of yourself'
               name='bio'
               value={bio}
