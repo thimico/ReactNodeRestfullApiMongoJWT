@@ -174,7 +174,7 @@ const EditProfile = ({
                 </div>
 
                 <div className='my-2'>
-                    <button class="btn btn-info btn-block mt-4"
+                    <button className="btn btn-info btn-block mt-4"
                         onClick={() => toggleSocialInputs(!displaySocialInputs)}
                         type='button'
                         className='btn btn-light'
