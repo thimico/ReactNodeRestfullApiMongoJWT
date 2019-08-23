@@ -19,7 +19,8 @@ const PostForm = ({ addPost }) => {
           setText('');
         }}
       >
-        <textarea
+        <textarea 
+          className="form-control form-control-lg"
           name='text'
           cols='30'
           rows='5'
